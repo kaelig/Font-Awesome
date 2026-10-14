@@ -237,7 +237,6 @@ function _wrapRegExp() {
     return e[Symbol.replace].call(this, t, p);
   }, _wrapRegExp.apply(this, arguments);
 }
-
 var _plugins = [];
 var _hooks = {};
 var providers = {};
@@ -306,7 +305,6 @@ function callProvided() {
   var args = Array.prototype.slice.call(arguments, 1);
   return providers[hook] ? providers[hook].apply(null, args) : undefined;
 }
-
 var noop = function noop() {};
 var _WINDOW = {};
 var _DOCUMENT = {};
@@ -332,7 +330,6 @@ var PERFORMANCE = _PERFORMANCE;
 var IS_BROWSER = !!WINDOW.document;
 var IS_DOM = !!DOCUMENT.documentElement && !!DOCUMENT.head && typeof DOCUMENT.addEventListener === 'function' && typeof DOCUMENT.createElement === 'function';
 var IS_IE = ~userAgent.indexOf('MSIE') || ~userAgent.indexOf('Trident/');
-
 var _cl;
 var Z = /fa(k|kd|s|r|l|t|d|dr|dl|dt|b|slr|slpr|wsb|tl|ns|nds|es|gt|jr|jfr|jdr|usb|ufsb|udsb|cr|ss|sr|sl|st|sds|sdr|sdl|sdt|sldr|slpdr|pr|ms|vs)?[\-\ ]/,
   $ = /Font ?Awesome ?([567 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp Duotone|Sharp|Kit|Notdog Duo|Notdog|Chisel|Etch|Graphite|Thumbprint|Jelly Fill|Jelly Duo|Jelly|Utility|Utility Fill|Utility Duo|Slab Press|Slab|Slab Duo|Slab Press Duo|Pixel|Mosaic|Vellum|Whiteboard)?.*/i;
@@ -523,210 +520,210 @@ var u = "classic",
   xl = [u, l, h, t, g, n, m, p, s, y, w, x, e, b, c, o, I, a, r, v, i, F, d, S],
   cl = (_cl = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_cl, u, A), l, P), h, j), t, B), g, N), n, D), m, k), p, T), s, C), y, W), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_cl, w, R), x, K), e, L), b, U), c, J), o, _), I, M), a, E), r, G), v, V), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_cl, i, z), F, O), d, Y), S, q));
 var Al = {
-    classic: {
-      900: "fas",
-      400: "far",
-      normal: "far",
-      300: "fal",
-      100: "fat"
-    },
-    duotone: {
-      900: "fad",
-      400: "fadr",
-      300: "fadl",
-      100: "fadt"
-    },
-    sharp: {
-      900: "fass",
-      400: "fasr",
-      300: "fasl",
-      100: "fast"
-    },
-    "sharp-duotone": {
-      900: "fasds",
-      400: "fasdr",
-      300: "fasdl",
-      100: "fasdt"
-    },
-    slab: {
-      400: "faslr"
-    },
-    "slab-press": {
-      400: "faslpr"
-    },
-    "slab-duo": {
-      400: "fasldr"
-    },
-    "slab-press-duo": {
-      400: "faslpdr"
-    },
-    vellum: {
-      900: "favs"
-    },
-    mosaic: {
-      900: "fams"
-    },
-    pixel: {
-      400: "fapr"
-    },
-    whiteboard: {
-      600: "fawsb"
-    },
-    thumbprint: {
-      300: "fatl"
-    },
-    notdog: {
-      900: "fans"
-    },
-    "notdog-duo": {
-      900: "fands"
-    },
-    etch: {
-      900: "faes"
-    },
-    graphite: {
-      100: "fagt"
-    },
-    chisel: {
-      400: "facr"
-    },
-    jelly: {
-      400: "fajr"
-    },
-    "jelly-fill": {
-      400: "fajfr"
-    },
-    "jelly-duo": {
-      400: "fajdr"
-    },
-    utility: {
-      600: "fausb"
-    },
-    "utility-duo": {
-      600: "faudsb"
-    },
-    "utility-fill": {
-      600: "faufsb"
-    }
-  };
+  classic: {
+    900: "fas",
+    400: "far",
+    normal: "far",
+    300: "fal",
+    100: "fat"
+  },
+  duotone: {
+    900: "fad",
+    400: "fadr",
+    300: "fadl",
+    100: "fadt"
+  },
+  sharp: {
+    900: "fass",
+    400: "fasr",
+    300: "fasl",
+    100: "fast"
+  },
+  "sharp-duotone": {
+    900: "fasds",
+    400: "fasdr",
+    300: "fasdl",
+    100: "fasdt"
+  },
+  slab: {
+    400: "faslr"
+  },
+  "slab-press": {
+    400: "faslpr"
+  },
+  "slab-duo": {
+    400: "fasldr"
+  },
+  "slab-press-duo": {
+    400: "faslpdr"
+  },
+  vellum: {
+    900: "favs"
+  },
+  mosaic: {
+    900: "fams"
+  },
+  pixel: {
+    400: "fapr"
+  },
+  whiteboard: {
+    600: "fawsb"
+  },
+  thumbprint: {
+    300: "fatl"
+  },
+  notdog: {
+    900: "fans"
+  },
+  "notdog-duo": {
+    900: "fands"
+  },
+  etch: {
+    900: "faes"
+  },
+  graphite: {
+    100: "fagt"
+  },
+  chisel: {
+    400: "facr"
+  },
+  jelly: {
+    400: "fajr"
+  },
+  "jelly-fill": {
+    400: "fajfr"
+  },
+  "jelly-duo": {
+    400: "fajdr"
+  },
+  utility: {
+    600: "fausb"
+  },
+  "utility-duo": {
+    600: "faudsb"
+  },
+  "utility-fill": {
+    600: "faufsb"
+  }
+};
 var zl = {
-    "Font Awesome 7 Free": {
-      900: "fas",
-      400: "far"
-    },
-    "Font Awesome 7 Pro": {
-      900: "fas",
-      400: "far",
-      normal: "far",
-      300: "fal",
-      100: "fat"
-    },
-    "Font Awesome 7 Brands": {
-      400: "fab",
-      normal: "fab"
-    },
-    "Font Awesome 7 Duotone": {
-      900: "fad",
-      400: "fadr",
-      normal: "fadr",
-      300: "fadl",
-      100: "fadt"
-    },
-    "Font Awesome 7 Sharp": {
-      900: "fass",
-      400: "fasr",
-      normal: "fasr",
-      300: "fasl",
-      100: "fast"
-    },
-    "Font Awesome 7 Sharp Duotone": {
-      900: "fasds",
-      400: "fasdr",
-      normal: "fasdr",
-      300: "fasdl",
-      100: "fasdt"
-    },
-    "Font Awesome 7 Jelly": {
-      400: "fajr",
-      normal: "fajr"
-    },
-    "Font Awesome 7 Jelly Fill": {
-      400: "fajfr",
-      normal: "fajfr"
-    },
-    "Font Awesome 7 Jelly Duo": {
-      400: "fajdr",
-      normal: "fajdr"
-    },
-    "Font Awesome 7 Slab": {
-      400: "faslr",
-      normal: "faslr"
-    },
-    "Font Awesome 7 Slab Press": {
-      400: "faslpr",
-      normal: "faslpr"
-    },
-    "Font Awesome 7 Slab Duo": {
-      400: "fasldr",
-      normal: "fasldr"
-    },
-    "Font Awesome 7 Slab Press Duo": {
-      400: "faslpdr",
-      normal: "faslpdr"
-    },
-    "Font Awesome 7 Pixel": {
-      400: "fapr",
-      normal: "fapr"
-    },
-    "Font Awesome 7 Mosaic": {
-      900: "fams",
-      normal: "fams"
-    },
-    "Font Awesome 7 Vellum": {
-      900: "favs",
-      normal: "favs"
-    },
-    "Font Awesome 7 Thumbprint": {
-      300: "fatl",
-      normal: "fatl"
-    },
-    "Font Awesome 7 Notdog": {
-      900: "fans",
-      normal: "fans"
-    },
-    "Font Awesome 7 Notdog Duo": {
-      900: "fands",
-      normal: "fands"
-    },
-    "Font Awesome 7 Etch": {
-      900: "faes",
-      normal: "faes"
-    },
-    "Font Awesome 7 Graphite": {
-      100: "fagt",
-      normal: "fagt"
-    },
-    "Font Awesome 7 Chisel": {
-      400: "facr",
-      normal: "facr"
-    },
-    "Font Awesome 7 Whiteboard": {
-      600: "fawsb",
-      normal: "fawsb"
-    },
-    "Font Awesome 7 Utility": {
-      600: "fausb",
-      normal: "fausb"
-    },
-    "Font Awesome 7 Utility Duo": {
-      600: "faudsb",
-      normal: "faudsb"
-    },
-    "Font Awesome 7 Utility Fill": {
-      600: "faufsb",
-      normal: "faufsb"
-    }
-  };
+  "Font Awesome 7 Free": {
+    900: "fas",
+    400: "far"
+  },
+  "Font Awesome 7 Pro": {
+    900: "fas",
+    400: "far",
+    normal: "far",
+    300: "fal",
+    100: "fat"
+  },
+  "Font Awesome 7 Brands": {
+    400: "fab",
+    normal: "fab"
+  },
+  "Font Awesome 7 Duotone": {
+    900: "fad",
+    400: "fadr",
+    normal: "fadr",
+    300: "fadl",
+    100: "fadt"
+  },
+  "Font Awesome 7 Sharp": {
+    900: "fass",
+    400: "fasr",
+    normal: "fasr",
+    300: "fasl",
+    100: "fast"
+  },
+  "Font Awesome 7 Sharp Duotone": {
+    900: "fasds",
+    400: "fasdr",
+    normal: "fasdr",
+    300: "fasdl",
+    100: "fasdt"
+  },
+  "Font Awesome 7 Jelly": {
+    400: "fajr",
+    normal: "fajr"
+  },
+  "Font Awesome 7 Jelly Fill": {
+    400: "fajfr",
+    normal: "fajfr"
+  },
+  "Font Awesome 7 Jelly Duo": {
+    400: "fajdr",
+    normal: "fajdr"
+  },
+  "Font Awesome 7 Slab": {
+    400: "faslr",
+    normal: "faslr"
+  },
+  "Font Awesome 7 Slab Press": {
+    400: "faslpr",
+    normal: "faslpr"
+  },
+  "Font Awesome 7 Slab Duo": {
+    400: "fasldr",
+    normal: "fasldr"
+  },
+  "Font Awesome 7 Slab Press Duo": {
+    400: "faslpdr",
+    normal: "faslpdr"
+  },
+  "Font Awesome 7 Pixel": {
+    400: "fapr",
+    normal: "fapr"
+  },
+  "Font Awesome 7 Mosaic": {
+    900: "fams",
+    normal: "fams"
+  },
+  "Font Awesome 7 Vellum": {
+    900: "favs",
+    normal: "favs"
+  },
+  "Font Awesome 7 Thumbprint": {
+    300: "fatl",
+    normal: "fatl"
+  },
+  "Font Awesome 7 Notdog": {
+    900: "fans",
+    normal: "fans"
+  },
+  "Font Awesome 7 Notdog Duo": {
+    900: "fands",
+    normal: "fands"
+  },
+  "Font Awesome 7 Etch": {
+    900: "faes",
+    normal: "faes"
+  },
+  "Font Awesome 7 Graphite": {
+    100: "fagt",
+    normal: "fagt"
+  },
+  "Font Awesome 7 Chisel": {
+    400: "facr",
+    normal: "facr"
+  },
+  "Font Awesome 7 Whiteboard": {
+    600: "fawsb",
+    normal: "fawsb"
+  },
+  "Font Awesome 7 Utility": {
+    600: "fausb",
+    normal: "fausb"
+  },
+  "Font Awesome 7 Utility Duo": {
+    600: "faudsb",
+    normal: "faudsb"
+  },
+  "Font Awesome 7 Utility Fill": {
+    600: "faufsb",
+    normal: "faufsb"
+  }
+};
 var Ql = new Map([["classic", {
     defaultShortPrefixId: "fas",
     defaultStyleId: "solid",
@@ -1003,14 +1000,13 @@ var ct = {
     }
   };
 var St = {
-    kit: {
-      kit: "fak"
-    },
-    "kit-duotone": {
-      "kit-duotone": "fakd"
-    }
-  };
-
+  kit: {
+    kit: "fak"
+  },
+  "kit-duotone": {
+    "kit-duotone": "fakd"
+  }
+};
 var _jl;
 var l$1 = {
     GROUP: "duotone-group",
@@ -1285,25 +1281,24 @@ var ra = {
     return "w-".concat(s);
   }));
 var wa = {
-    "Font Awesome 5 Free": {
-      900: "fas",
-      400: "far"
-    },
-    "Font Awesome 5 Pro": {
-      900: "fas",
-      400: "far",
-      normal: "far",
-      300: "fal"
-    },
-    "Font Awesome 5 Brands": {
-      400: "fab",
-      normal: "fab"
-    },
-    "Font Awesome 5 Duotone": {
-      900: "fad"
-    }
-  };
-
+  "Font Awesome 5 Free": {
+    900: "fas",
+    400: "far"
+  },
+  "Font Awesome 5 Pro": {
+    900: "fas",
+    400: "far",
+    normal: "far",
+    300: "fal"
+  },
+  "Font Awesome 5 Brands": {
+    400: "fab",
+    normal: "fab"
+  },
+  "Font Awesome 5 Duotone": {
+    900: "fad"
+  }
+};
 var NAMESPACE_IDENTIFIER = '___FONT_AWESOME___';
 var UNITS_IN_GRID = 16;
 var DEFAULT_CSS_PREFIX = 'fa';
@@ -1332,38 +1327,59 @@ function familyProxy(obj) {
     }
   });
 }
-var _PREFIX_TO_STYLE = _objectSpread2({}, rl);
+var _PREFIX_TO_STYLE = {
+  ...rl
+};
 
 // We changed FACSSClassesToStyleId in the icons repo to be canonical and as such, "classic" family does not have any
 // duotone styles.  But we do still need duotone in _PREFIX_TO_STYLE below, so we are manually adding
 // {'fa-duotone': 'duotone'}
-_PREFIX_TO_STYLE[u] = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, {
-  'fa-duotone': 'duotone'
-}), rl[u]), rt['kit']), rt['kit-duotone']);
+_PREFIX_TO_STYLE[u] = {
+  'fa-duotone': 'duotone',
+  ...rl[u],
+  ...rt['kit'],
+  ...rt['kit-duotone']
+};
 var PREFIX_TO_STYLE = familyProxy(_PREFIX_TO_STYLE);
-var _STYLE_TO_PREFIX = _objectSpread2({}, $l);
+var _STYLE_TO_PREFIX = {
+  ...$l
+};
 
 // We changed FAStyleIdToShortPrefixId in the icons repo to be canonical and as such, "classic" family does not have any
 // duotone styles.  But we do still need duotone in _STYLE_TO_PREFIX below, so we are manually adding {duotone: 'fad'}
-_STYLE_TO_PREFIX[u] = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, {
-  duotone: 'fad'
-}), _STYLE_TO_PREFIX[u]), St['kit']), St['kit-duotone']);
+_STYLE_TO_PREFIX[u] = {
+  duotone: 'fad',
+  ..._STYLE_TO_PREFIX[u],
+  ...St['kit'],
+  ...St['kit-duotone']
+};
 var STYLE_TO_PREFIX = familyProxy(_STYLE_TO_PREFIX);
-var _PREFIX_TO_LONG_STYLE = _objectSpread2({}, da);
-_PREFIX_TO_LONG_STYLE[u] = _objectSpread2(_objectSpread2({}, _PREFIX_TO_LONG_STYLE[u]), It['kit']);
+var _PREFIX_TO_LONG_STYLE = {
+  ...da
+};
+_PREFIX_TO_LONG_STYLE[u] = {
+  ..._PREFIX_TO_LONG_STYLE[u],
+  ...It['kit']
+};
 var PREFIX_TO_LONG_STYLE = familyProxy(_PREFIX_TO_LONG_STYLE);
-var _LONG_STYLE_TO_PREFIX = _objectSpread2({}, ra);
-_LONG_STYLE_TO_PREFIX[u] = _objectSpread2(_objectSpread2({}, _LONG_STYLE_TO_PREFIX[u]), mt['kit']);
+var _LONG_STYLE_TO_PREFIX = {
+  ...ra
+};
+_LONG_STYLE_TO_PREFIX[u] = {
+  ..._LONG_STYLE_TO_PREFIX[u],
+  ...mt['kit']
+};
 var LONG_STYLE_TO_PREFIX = familyProxy(_LONG_STYLE_TO_PREFIX);
 var ICON_SELECTION_SYNTAX_PATTERN = Z;
 var LAYERS_TEXT_CLASSNAME = 'fa-layers-text';
 var FONT_FAMILY_PATTERN = $;
-var _FONT_WEIGHT_TO_PREFIX = _objectSpread2({}, Al);
+var _FONT_WEIGHT_TO_PREFIX = {
+  ...Al
+};
 var FONT_WEIGHT_TO_PREFIX = familyProxy(_FONT_WEIGHT_TO_PREFIX);
 var ATTRIBUTES_WATCHED_FOR_MUTATION = ['class', 'data-prefix', 'data-icon', 'data-fa-transform', 'data-fa-mask'];
 var DUOTONE_CLASSES = il;
 var RESERVED_CLASSES = [].concat(_toConsumableArray(it), _toConsumableArray(ga));
-
 var initial = WINDOW.FontAwesomeConfig || {};
 function getAttrConfig(attr) {
   var element = DOCUMENT.querySelector('script[' + attr + ']');
@@ -1412,7 +1428,10 @@ var _default = {
 if (initial.familyPrefix) {
   initial.cssPrefix = initial.familyPrefix;
 }
-var _config = _objectSpread2(_objectSpread2({}, _default), initial);
+var _config = {
+  ..._default,
+  ...initial
+};
 if (!_config.autoReplaceSvg) _config.observeMutations = false;
 var config = {};
 Object.keys(_default).forEach(function (key) {
@@ -1451,14 +1470,12 @@ function onChange(cb) {
     _onChangeCb.splice(_onChangeCb.indexOf(cb), 1);
   };
 }
-
 var w$2 = WINDOW || {};
 if (!w$2[NAMESPACE_IDENTIFIER]) w$2[NAMESPACE_IDENTIFIER] = {};
 if (!w$2[NAMESPACE_IDENTIFIER].styles) w$2[NAMESPACE_IDENTIFIER].styles = {};
 if (!w$2[NAMESPACE_IDENTIFIER].hooks) w$2[NAMESPACE_IDENTIFIER].hooks = {};
 if (!w$2[NAMESPACE_IDENTIFIER].shims) w$2[NAMESPACE_IDENTIFIER].shims = [];
 var namespace = w$2[NAMESPACE_IDENTIFIER];
-
 var functions = [];
 var _listener = function listener() {
   DOCUMENT.removeEventListener('DOMContentLoaded', _listener);
@@ -1472,11 +1489,10 @@ if (IS_DOM) {
   loaded = (DOCUMENT.documentElement.doScroll ? /^loaded|^c/ : /^loaded|^i|^c/).test(DOCUMENT.readyState);
   if (!loaded) DOCUMENT.addEventListener('DOMContentLoaded', _listener);
 }
-function domready (fn) {
+function domready(fn) {
   if (!IS_DOM) return;
   loaded ? setTimeout(fn, 0) : functions.push(fn);
 }
-
 var d$2 = UNITS_IN_GRID;
 var meaninglessTransform = {
   size: 16,
@@ -1588,7 +1604,6 @@ function transformForCss(_ref2) {
   val += "rotate(".concat(transform.rotate, "deg) ");
   return val;
 }
-
 function toHtml(abstractNodes) {
   var tag = abstractNodes.tag,
     _abstractNodes$attrib = abstractNodes.attributes,
@@ -1601,7 +1616,6 @@ function toHtml(abstractNodes) {
     return "<".concat(tag, " ").concat(joinAttributes(attributes), ">").concat(children.map(toHtml).join(''), "</").concat(tag, ">");
   }
 }
-
 function iconFromMapping(mapping, prefix, iconName) {
   if (mapping && mapping[prefix] && mapping[prefix][iconName]) {
     return {
@@ -1663,7 +1677,6 @@ function toHex(unicode) {
   if (_toConsumableArray(unicode).length !== 1) return null;
   return unicode.codePointAt(0).toString(16);
 }
-
 function normalizeIcons(icons) {
   return Object.keys(icons).reduce(function (acc, iconName) {
     var icon = icons[iconName];
@@ -1684,7 +1697,10 @@ function defineIcons(prefix, icons) {
   if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
     namespace.hooks.addPack(prefix, normalizeIcons(icons));
   } else {
-    namespace.styles[prefix] = _objectSpread2(_objectSpread2({}, namespace.styles[prefix] || {}), normalized);
+    namespace.styles[prefix] = {
+      ...(namespace.styles[prefix] || {}),
+      ...normalized
+    };
   }
 
   /**
@@ -1697,7 +1713,6 @@ function defineIcons(prefix, icons) {
     defineIcons('fa', icons);
   }
 }
-
 var MONO = 0x1;
 var DUO = 0x2;
 
@@ -1758,7 +1773,6 @@ var legacyMatches = [[DUO, /*#__PURE__*/_wrapRegExp(/path class="([^"]*secondary
   attr1: 1,
   d1: 2
 })]];
-
 var styles = namespace.styles,
   shims = namespace.shims;
 var FAMILY_NAMES = Object.keys(PREFIX_TO_LONG_STYLE);
@@ -1973,19 +1987,24 @@ function getCanonicalIcon(values) {
     _faStyles$ = _faStyles[0],
     styleFromValues = _faStyles$ === void 0 ? null : _faStyles$;
   var family = getFamilyId(faStyleOrFamilyClasses);
-  var canonical = _objectSpread2(_objectSpread2({}, moveNonFaClassesToRest(nonStyleOrFamilyClasses)), {}, {
+  var canonical = {
+    ...moveNonFaClassesToRest(nonStyleOrFamilyClasses),
     prefix: getCanonicalPrefix(styleFromValues, {
       family: family
     })
-  });
-  return _objectSpread2(_objectSpread2(_objectSpread2({}, canonical), getDefaultCanonicalPrefix({
-    values: values,
-    family: family,
-    styles: styles,
-    config: config,
-    canonical: canonical,
-    givenPrefix: givenPrefix
-  })), applyShimAndAlias(skipLookups, givenPrefix, canonical));
+  };
+  return {
+    ...canonical,
+    ...getDefaultCanonicalPrefix({
+      values: values,
+      family: family,
+      styles: styles,
+      config: config,
+      canonical: canonical,
+      givenPrefix: givenPrefix
+    }),
+    ...applyShimAndAlias(skipLookups, givenPrefix, canonical)
+  };
 }
 function applyShimAndAlias(skipLookups, givenPrefix, canonical) {
   var prefix = canonical.prefix,
@@ -2055,7 +2074,6 @@ function getDefaultCanonicalPrefix(prefixOptions) {
   }
   return canonical;
 }
-
 var Library = /*#__PURE__*/function () {
   function Library() {
     _classCallCheck(this, Library);
@@ -2070,7 +2088,10 @@ var Library = /*#__PURE__*/function () {
       }
       var additions = definitions.reduce(this._pullDefinitions, {});
       Object.keys(additions).forEach(function (key) {
-        _this.definitions[key] = _objectSpread2(_objectSpread2({}, _this.definitions[key] || {}), additions[key]);
+        _this.definitions[key] = {
+          ...(_this.definitions[key] || {}),
+          ...additions[key]
+        };
         defineIcons(key, additions[key]);
 
         // To keep support for older Classic styles, also add longer prefixes
@@ -2110,7 +2131,6 @@ var Library = /*#__PURE__*/function () {
     }
   }]);
 }();
-
 function findIconDefinition(iconLookup) {
   if (iconLookup.prefix === 'fa') {
     iconLookup.prefix = 'fas';
@@ -2207,9 +2227,7 @@ var autoReplace = function autoReplace() {
     node: autoReplaceSvgRoot
   });
 };
-
 var baseStyles = ":root, :host {\n  --fa-font-solid: normal 900 1em/1 'Font Awesome 7 Free';\n  --fa-font-regular: normal 400 1em/1 'Font Awesome 7 Free';\n  --fa-font-light: normal 300 1em/1 'Font Awesome 7 Pro';\n  --fa-font-thin: normal 100 1em/1 'Font Awesome 7 Pro';\n  --fa-font-duotone: normal 900 1em/1 'Font Awesome 7 Duotone';\n  --fa-font-duotone-regular: normal 400 1em/1 'Font Awesome 7 Duotone';\n  --fa-font-duotone-light: normal 300 1em/1 'Font Awesome 7 Duotone';\n  --fa-font-duotone-thin: normal 100 1em/1 'Font Awesome 7 Duotone';\n  --fa-font-brands: normal 400 1em/1 'Font Awesome 7 Brands';\n  --fa-font-sharp-solid: normal 900 1em/1 'Font Awesome 7 Sharp';\n  --fa-font-sharp-regular: normal 400 1em/1 'Font Awesome 7 Sharp';\n  --fa-font-sharp-light: normal 300 1em/1 'Font Awesome 7 Sharp';\n  --fa-font-sharp-thin: normal 100 1em/1 'Font Awesome 7 Sharp';\n  --fa-font-sharp-duotone-solid: normal 900 1em/1 'Font Awesome 7 Sharp Duotone';\n  --fa-font-sharp-duotone-regular: normal 400 1em/1 'Font Awesome 7 Sharp Duotone';\n  --fa-font-sharp-duotone-light: normal 300 1em/1 'Font Awesome 7 Sharp Duotone';\n  --fa-font-sharp-duotone-thin: normal 100 1em/1 'Font Awesome 7 Sharp Duotone';\n  --fa-font-slab-regular: normal 400 1em/1 'Font Awesome 7 Slab';\n  --fa-font-slab-press-regular: normal 400 1em/1 'Font Awesome 7 Slab Press';\n  --fa-font-slab-duo-regular: normal 400 1em/1 'Font Awesome 7 Slab Duo';\n  --fa-font-slab-press-duo-regular: normal 400 1em/1 'Font Awesome 7 Slab Press Duo';\n  --fa-font-pixel-regular: normal 400 1em/1 'Font Awesome 7 Pixel';\n  --fa-font-mosaic-solid: normal 900 1em/1 'Font Awesome 7 Mosaic';\n  --fa-font-vellum-solid: normal 900 1em/1 'Font Awesome 7 Vellum';\n  --fa-font-whiteboard-semibold: normal 600 1em/1 'Font Awesome 7 Whiteboard';\n  --fa-font-thumbprint-light: normal 300 1em/1 'Font Awesome 7 Thumbprint';\n  --fa-font-notdog-solid: normal 900 1em/1 'Font Awesome 7 Notdog';\n  --fa-font-notdog-duo-solid: normal 900 1em/1 'Font Awesome 7 Notdog Duo';\n  --fa-font-etch-solid: normal 900 1em/1 'Font Awesome 7 Etch';\n  --fa-font-graphite-thin: normal 100 1em/1 'Font Awesome 7 Graphite';\n  --fa-font-jelly-regular: normal 400 1em/1 'Font Awesome 7 Jelly';\n  --fa-font-jelly-fill-regular: normal 400 1em/1 'Font Awesome 7 Jelly Fill';\n  --fa-font-jelly-duo-regular: normal 400 1em/1 'Font Awesome 7 Jelly Duo';\n  --fa-font-chisel-regular: normal 400 1em/1 'Font Awesome 7 Chisel';\n  --fa-font-utility-semibold: normal 600 1em/1 'Font Awesome 7 Utility';\n  --fa-font-utility-duo-semibold: normal 600 1em/1 'Font Awesome 7 Utility Duo';\n  --fa-font-utility-fill-semibold: normal 600 1em/1 'Font Awesome 7 Utility Fill';\n}\n\n.svg-inline--fa {\n  box-sizing: content-box;\n  display: var(--fa-display, inline-block);\n  height: 1em;\n  overflow: visible;\n  vertical-align: -0.125em;\n  width: var(--fa-width, 1.25em);\n}\n.svg-inline--fa.fa-2xs {\n  vertical-align: 0.1em;\n}\n.svg-inline--fa.fa-xs {\n  vertical-align: 0em;\n}\n.svg-inline--fa.fa-sm {\n  vertical-align: -0.0714285714em;\n}\n.svg-inline--fa.fa-lg {\n  vertical-align: -0.2em;\n}\n.svg-inline--fa.fa-xl {\n  vertical-align: -0.25em;\n}\n.svg-inline--fa.fa-2xl {\n  vertical-align: -0.3125em;\n}\n.svg-inline--fa.fa-pull-left,\n.svg-inline--fa .fa-pull-start {\n  float: inline-start;\n  margin-inline-end: var(--fa-pull-margin, 0.3em);\n}\n.svg-inline--fa.fa-pull-right,\n.svg-inline--fa .fa-pull-end {\n  float: inline-end;\n  margin-inline-start: var(--fa-pull-margin, 0.3em);\n}\n.svg-inline--fa.fa-li {\n  width: var(--fa-li-width, 2em);\n  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));\n  inset-block-start: 0.25em; /* syncing vertical alignment with Web Font rendering */\n}\n\n.fa-layers-counter, .fa-layers-text {\n  display: inline-block;\n  position: absolute;\n  text-align: center;\n}\n\n.fa-layers {\n  display: inline-block;\n  height: 1em;\n  position: relative;\n  text-align: center;\n  vertical-align: -0.125em;\n  width: var(--fa-width, 1.25em);\n}\n.fa-layers .svg-inline--fa {\n  inset: 0;\n  margin: auto;\n  position: absolute;\n  transform-origin: center center;\n}\n\n.fa-layers-text {\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n  transform-origin: center center;\n}\n\n.fa-layers-counter {\n  background-color: var(--fa-counter-background-color, #ff253a);\n  border-radius: var(--fa-counter-border-radius, 1em);\n  box-sizing: border-box;\n  color: var(--fa-inverse, #fff);\n  line-height: var(--fa-counter-line-height, 1);\n  max-width: var(--fa-counter-max-width, 5em);\n  min-width: var(--fa-counter-min-width, 1.5em);\n  overflow: hidden;\n  padding: var(--fa-counter-padding, 0.25em 0.5em);\n  right: var(--fa-right, 0);\n  text-overflow: ellipsis;\n  top: var(--fa-top, 0);\n  transform: scale(var(--fa-counter-scale, 0.25));\n  transform-origin: top right;\n}\n\n.fa-layers-bottom-right {\n  bottom: var(--fa-bottom, 0);\n  right: var(--fa-right, 0);\n  top: auto;\n  transform: scale(var(--fa-layers-scale, 0.25));\n  transform-origin: bottom right;\n}\n\n.fa-layers-bottom-left {\n  bottom: var(--fa-bottom, 0);\n  left: var(--fa-left, 0);\n  right: auto;\n  top: auto;\n  transform: scale(var(--fa-layers-scale, 0.25));\n  transform-origin: bottom left;\n}\n\n.fa-layers-top-right {\n  top: var(--fa-top, 0);\n  right: var(--fa-right, 0);\n  transform: scale(var(--fa-layers-scale, 0.25));\n  transform-origin: top right;\n}\n\n.fa-layers-top-left {\n  left: var(--fa-left, 0);\n  right: auto;\n  top: var(--fa-top, 0);\n  transform: scale(var(--fa-layers-scale, 0.25));\n  transform-origin: top left;\n}\n\n.fa-1x {\n  font-size: 1em;\n}\n\n.fa-2x {\n  font-size: 2em;\n}\n\n.fa-3x {\n  font-size: 3em;\n}\n\n.fa-4x {\n  font-size: 4em;\n}\n\n.fa-5x {\n  font-size: 5em;\n}\n\n.fa-6x {\n  font-size: 6em;\n}\n\n.fa-7x {\n  font-size: 7em;\n}\n\n.fa-8x {\n  font-size: 8em;\n}\n\n.fa-9x {\n  font-size: 9em;\n}\n\n.fa-10x {\n  font-size: 10em;\n}\n\n.fa-2xs {\n  font-size: calc(10 / 16 * 1em); /* converts a 10px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 10 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 10 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-xs {\n  font-size: calc(12 / 16 * 1em); /* converts a 12px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 12 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 12 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-sm {\n  font-size: calc(14 / 16 * 1em); /* converts a 14px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 14 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 14 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-lg {\n  font-size: calc(20 / 16 * 1em); /* converts a 20px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 20 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 20 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-xl {\n  font-size: calc(24 / 16 * 1em); /* converts a 24px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 24 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 24 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-2xl {\n  font-size: calc(32 / 16 * 1em); /* converts a 32px size into an em-based value that's relative to the scale's 16px base */\n  line-height: calc(1 / 32 * 1em); /* sets the line-height of the icon back to that of it's parent */\n  vertical-align: calc((6 / 32 - 0.375) * 1em); /* vertically centers the icon taking into account the surrounding text's descender */\n}\n\n.fa-width-auto {\n  --fa-width: auto;\n}\n\n.fa-fw,\n.fa-width-fixed {\n  --fa-width: 1.25em;\n}\n\n.fa-canvas-square {\n  padding-block: 0.125em;\n  margin-block-end: -0.125em;\n}\n\n.fa-canvas-roomy {\n  padding-block: 0.25em;\n  padding-inline: 0.125em;\n  margin-block-end: -0.25em;\n  box-sizing: content-box;\n}\n\n.fa-ul {\n  list-style-type: none;\n  margin-inline-start: var(--fa-li-margin, 2.5em);\n  padding-inline-start: 0;\n}\n.fa-ul > li {\n  position: relative;\n}\n\n.fa-li {\n  inset-inline-start: calc(-1 * var(--fa-li-width, 2em));\n  position: absolute;\n  text-align: center;\n  width: var(--fa-li-width, 2em);\n  line-height: inherit;\n}\n\n/* Heads Up: Bordered Icons will not be supported in the future!\n  - This feature will be deprecated in the next major release of Font Awesome (v8)!\n  - You may continue to use it in this version *v7), but it will not be supported in Font Awesome v8.\n*/\n/* Notes:\n* --@{v.$css-prefix}-border-width = 1/16 by default (to render as ~1px based on a 16px default font-size)\n* --@{v.$css-prefix}-border-padding =\n  ** 3/16 for vertical padding (to give ~2px of vertical whitespace around an icon considering it's vertical alignment)\n  ** 4/16 for horizontal padding (to give ~4px of horizontal whitespace around an icon)\n*/\n.fa-border {\n  border-color: var(--fa-border-color, #eee);\n  border-radius: var(--fa-border-radius, 0.1em);\n  border-style: var(--fa-border-style, solid);\n  border-width: var(--fa-border-width, 0.0625em);\n  box-sizing: var(--fa-border-box-sizing, content-box);\n  padding: var(--fa-border-padding, 0.1875em 0.25em);\n}\n\n.fa-pull-left,\n.fa-pull-start {\n  float: inline-start;\n  margin-inline-end: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-pull-right,\n.fa-pull-end {\n  float: inline-end;\n  margin-inline-start: var(--fa-pull-margin, 0.3em);\n}\n\n.fa-beat {\n  animation-name: fa-beat;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-bounce {\n  animation-name: fa-bounce;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));\n}\n\n.fa-fade {\n  animation-name: fa-fade;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-beat-fade {\n  animation-name: fa-beat-fade;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-flip {\n  animation-name: fa-flip;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1.5s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-flip-360 {\n  animation-name: fa-flip-360;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-shake {\n  animation-name: fa-shake;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 0.75s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n}\n\n.fa-spin {\n  animation-name: fa-spin;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 2s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-reverse {\n  --fa-animation-direction: reverse;\n}\n\n.fa-pulse,\n.fa-spin-pulse {\n  animation-name: fa-spin;\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, steps(8));\n}\n\n.fa-spin-snap {\n  animation-name: fa-spin-snap;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 3s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-snap-4 {\n  animation-name: fa-spin-snap-4;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 2.4s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-spin-snap-8 {\n  animation-name: fa-spin-snap-8;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 4s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-buzz {\n  animation-name: fa-buzz;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 0.6s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, linear);\n}\n\n.fa-wag {\n  animation-name: fa-wag;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 0.9s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-out);\n  transform-origin: bottom center;\n}\n\n.fa-float {\n  animation-name: fa-float;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 3s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-in-out);\n  will-change: transform;\n}\n\n.fa-swing {\n  animation-name: fa-swing;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 1.2s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-out);\n  transform-origin: top center;\n}\n\n.fa-jello {\n  animation-name: fa-jello;\n  animation-delay: var(--fa-animation-delay, 0s);\n  animation-direction: var(--fa-animation-direction, normal);\n  animation-duration: var(--fa-animation-duration, 0.9s);\n  animation-iteration-count: var(--fa-animation-iteration-count, infinite);\n  animation-timing-function: var(--fa-animation-timing, ease-out);\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .fa-beat,\n  .fa-bounce,\n  .fa-fade,\n  .fa-beat-fade,\n  .fa-flip,\n  .fa-flip-360,\n  .fa-pulse,\n  .fa-shake,\n  .fa-spin,\n  .fa-spin-pulse,\n  .fa-buzz,\n  .fa-float,\n  .fa-jello,\n  .fa-spin-snap,\n  .fa-spin-snap-4,\n  .fa-spin-snap-8,\n  .fa-swing,\n  .fa-wag {\n    animation: none !important;\n    transition: none !important;\n  }\n}\n@keyframes fa-beat {\n  0% {\n    transform: scale(1);\n  }\n  25% {\n    transform: scale(calc(1.25 * var(--fa-beat-scale, 1.25)));\n  }\n  45% {\n    transform: scale(calc(1.22 * var(--fa-beat-scale, 1.22)));\n  }\n  65% {\n    transform: scale(calc(1.25 * var(--fa-beat-scale, 1.25)));\n  }\n  90% {\n    transform: scale(1);\n  }\n}\n@keyframes fa-bounce {\n  0% {\n    transform: scale(1, 1) translateY(0);\n    animation-timing-function: var(--fa-animation-timing);\n  }\n  14% {\n    transform: scale(var(--fa-bounce-start-scale-x, 1.06), var(--fa-bounce-start-scale-y, 0.94)) translateY(var(--fa-bounce-anticipation, 3px));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);\n  }\n  32% {\n    transform: scale(var(--fa-bounce-jump-scale-x, 0.94), var(--fa-bounce-jump-scale-y, 1.12)) translateY(calc(-1 * var(--fa-bounce-height, 0.5em)));\n    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);\n  }\n  52% {\n    transform: scale(1, 1) translateY(calc(-1 * var(--fa-bounce-height, 0.5em) * 1.1));\n    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);\n  }\n  70% {\n    transform: scale(var(--fa-bounce-land-scale-x, 1.06), var(--fa-bounce-land-scale-y, 0.92)) translateY(0);\n    animation-timing-function: cubic-bezier(0.33, 0.33, 0.66, 1);\n  }\n  85% {\n    transform: scale(0.98, 1.04) translateY(calc(-2px * var(--fa-bounce-rebound, 1)));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);\n  }\n  100% {\n    transform: scale(1, 1) translateY(0);\n  }\n}\n@keyframes fa-fade {\n  0% {\n    opacity: 1;\n    transform: scale(1);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.4, 1);\n  }\n  40% {\n    opacity: var(--fa-fade-opacity, 0.4);\n    transform: scale(0.98);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  100% {\n    opacity: 1;\n    transform: scale(1);\n  }\n}\n@keyframes fa-beat-fade {\n  0% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    transform: scale(1);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.4, 1);\n  }\n  25% {\n    opacity: calc(var(--fa-beat-fade-opacity, 0.4) + 0.4);\n    transform: scale(var(--fa-beat-fade-scale, 1.28));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  45% {\n    opacity: 1;\n    transform: scale(var(--fa-beat-fade-scale, 1.25));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  65% {\n    opacity: calc(var(--fa-beat-fade-opacity, 0.4) + 0.4);\n    transform: scale(var(--fa-beat-fade-scale, 1.28));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  100% {\n    opacity: var(--fa-beat-fade-opacity, 0.4);\n    transform: scale(1);\n  }\n}\n@keyframes fa-flip {\n  0% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), 0deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.4, 1);\n  }\n  8% {\n    transform: perspective(2em) scale(var(--fa-flip-anticipation-scale, 0.95)) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), 0deg);\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);\n  }\n  35% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), calc(var(--fa-flip-angle, -360deg) * 0.6));\n    animation-timing-function: linear;\n  }\n  65% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), calc(var(--fa-flip-angle, -360deg) * 0.5));\n    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);\n  }\n  92% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), calc(var(--fa-flip-angle, -360deg) * var(--fa-flip-overshoot, 1.04)));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);\n  }\n  100% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -360deg));\n  }\n}\n@keyframes fa-flip-360 {\n  0% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), 0deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.4, 1);\n  }\n  8% {\n    transform: perspective(2em) scale(var(--fa-flip-anticipation-scale, 0.95)) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), 0deg);\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);\n  }\n  50% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), calc(var(--fa-flip-angle, -360deg) * 0.6));\n    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);\n  }\n  80% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), calc(var(--fa-flip-angle, -360deg) * var(--fa-flip-overshoot, 1.04)));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);\n  }\n  100% {\n    transform: perspective(2em) scale(1) rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -360deg));\n  }\n}\n@keyframes fa-shake {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.8, 1);\n  }\n  8% {\n    transform: rotate(35deg) translateX(1px);\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  20% {\n    transform: rotate(-22deg) translateX(-1px);\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  35% {\n    transform: rotate(15deg) translateX(1px);\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  50% {\n    transform: rotate(-9deg);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  65% {\n    transform: rotate(5deg);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  78% {\n    transform: rotate(-3deg);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  90% {\n    transform: rotate(1deg);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin-snap {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  12% {\n    transform: rotate(60deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  16.67% {\n    transform: rotate(60deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  28.67% {\n    transform: rotate(120deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  33.33% {\n    transform: rotate(120deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  45.33% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  50% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  62% {\n    transform: rotate(240deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  66.67% {\n    transform: rotate(240deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  78.67% {\n    transform: rotate(300deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  83.33% {\n    transform: rotate(300deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  95.33% {\n    transform: rotate(360deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin-snap-4 {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  15% {\n    transform: rotate(90deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  25% {\n    transform: rotate(90deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  40% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  50% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  65% {\n    transform: rotate(270deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  75% {\n    transform: rotate(270deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  90% {\n    transform: rotate(360deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes fa-spin-snap-8 {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  9% {\n    transform: rotate(45deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  12.5% {\n    transform: rotate(45deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  21.5% {\n    transform: rotate(90deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  25% {\n    transform: rotate(90deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  34% {\n    transform: rotate(135deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  37.5% {\n    transform: rotate(135deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  46.5% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  50% {\n    transform: rotate(180deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  59% {\n    transform: rotate(225deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  62.5% {\n    transform: rotate(225deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  71.5% {\n    transform: rotate(270deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  75% {\n    transform: rotate(270deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  84% {\n    transform: rotate(315deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  87.5% {\n    transform: rotate(315deg);\n    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);\n  }\n  96.5% {\n    transform: rotate(360deg);\n    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n}\n@keyframes fa-buzz {\n  0% {\n    transform: translateX(0) rotate(0deg);\n    animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);\n  }\n  5% {\n    transform: translateX(var(--fa-buzz-distance, 4px)) rotate(0.5deg);\n  }\n  10% {\n    transform: translateX(calc(-1 * var(--fa-buzz-distance, 4px))) rotate(-0.5deg);\n  }\n  15% {\n    transform: translateX(var(--fa-buzz-distance, 4px)) rotate(0.3deg);\n  }\n  20% {\n    transform: translateX(calc(-1 * var(--fa-buzz-distance, 4px))) rotate(-0.3deg);\n  }\n  25% {\n    transform: translateX(calc(var(--fa-buzz-distance, 4px) * 0.7)) rotate(0.2deg);\n  }\n  30% {\n    transform: translateX(calc(-1 * var(--fa-buzz-distance, 4px) * 0.7)) rotate(-0.2deg);\n  }\n  35% {\n    transform: translateX(calc(var(--fa-buzz-distance, 4px) * 0.4)) rotate(0.1deg);\n  }\n  40% {\n    transform: translateX(0) rotate(0deg);\n  }\n  100% {\n    transform: translateX(0) rotate(0deg);\n  }\n}\n@keyframes fa-wag {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.6, 1);\n  }\n  12% {\n    transform: rotate(var(--fa-wag-angle, 12deg));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  24% {\n    transform: rotate(2deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.6, 1);\n  }\n  36% {\n    transform: rotate(calc(var(--fa-wag-angle, 12deg) * 0.85));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  48% {\n    transform: rotate(1deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.6, 1);\n  }\n  58% {\n    transform: rotate(calc(var(--fa-wag-angle, 12deg) * 0.6));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  68% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n@keyframes fa-float {\n  0% {\n    transform: translateY(0) translateX(0) rotate(0deg) scale(var(--fa-float-squash-x, 1.02), var(--fa-float-squash-y, 0.98));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);\n  }\n  15% {\n    transform: translateY(calc(-0.4 * var(--fa-float-height, 6px))) translateX(var(--fa-float-drift, 1px)) rotate(var(--fa-float-tilt, 1deg)) scale(1, 1);\n    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);\n  }\n  35% {\n    transform: translateY(calc(-1 * var(--fa-float-height, 6px))) translateX(0) rotate(0deg) scale(var(--fa-float-stretch-x, 0.98), var(--fa-float-stretch-y, 1.03));\n    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 0);\n  }\n  50% {\n    transform: translateY(calc(-0.92 * var(--fa-float-height, 6px))) translateX(calc(-0.5 * var(--fa-float-drift, 1px))) rotate(calc(-0.5 * var(--fa-float-tilt, 1deg))) scale(0.995, 1.01);\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 0.33);\n  }\n  70% {\n    transform: translateY(calc(-0.3 * var(--fa-float-height, 6px))) translateX(calc(-1 * var(--fa-float-drift, 1px))) rotate(calc(-1 * var(--fa-float-tilt, 1deg))) scale(1, 1);\n    animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);\n  }\n  90% {\n    transform: translateY(calc(0.05 * var(--fa-float-height, 6px))) translateX(0) rotate(0deg) scale(var(--fa-float-squash-x, 1.02), var(--fa-float-squash-y, 0.98));\n    animation-timing-function: cubic-bezier(0.33, 0, 0.66, 1);\n  }\n  100% {\n    transform: translateY(0) translateX(0) rotate(0deg) scale(var(--fa-float-squash-x, 1.02), var(--fa-float-squash-y, 0.98));\n  }\n}\n@keyframes fa-swing {\n  0% {\n    transform: rotate(0deg);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.8, 1);\n  }\n  8% {\n    transform: rotate(var(--fa-swing-angle, 22deg));\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  18% {\n    transform: rotate(calc(-1 * var(--fa-swing-angle, 22deg) * 0.85));\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  28% {\n    transform: rotate(calc(var(--fa-swing-angle, 22deg) * 0.65));\n    animation-timing-function: cubic-bezier(0.35, 0, 0.65, 1);\n  }\n  38% {\n    transform: rotate(calc(-1 * var(--fa-swing-angle, 22deg) * 0.45));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  48% {\n    transform: rotate(calc(var(--fa-swing-angle, 22deg) * 0.25));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  56% {\n    transform: rotate(calc(-1 * var(--fa-swing-angle, 22deg) * 0.1));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  64% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n@keyframes fa-jello {\n  0% {\n    transform: scale(1, 1);\n    animation-timing-function: cubic-bezier(0.2, 0, 0.8, 1);\n  }\n  12% {\n    transform: scale(var(--fa-jello-scale-x, 1.15), calc(2 - var(--fa-jello-scale-x, 1.15)));\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  24% {\n    transform: scale(calc(2 - var(--fa-jello-scale-y, 1.12)), var(--fa-jello-scale-y, 1.12));\n    animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);\n  }\n  36% {\n    transform: scale(calc(1 + (var(--fa-jello-scale-x, 1.15) - 1) * 0.5), calc(2 - (1 + (var(--fa-jello-scale-x, 1.15) - 1) * 0.5)));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  48% {\n    transform: scale(calc(2 - (1 + (var(--fa-jello-scale-y, 1.12) - 1) * 0.3)), calc(1 + (var(--fa-jello-scale-y, 1.12) - 1) * 0.3));\n    animation-timing-function: cubic-bezier(0.4, 0, 0.6, 1);\n  }\n  58% {\n    transform: scale(1.02, 0.98);\n    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n  }\n  68% {\n    transform: scale(1, 1);\n  }\n  100% {\n    transform: scale(1, 1);\n  }\n}\n.fa-rotate-90 {\n  transform: rotate(90deg);\n}\n\n.fa-rotate-180 {\n  transform: rotate(180deg);\n}\n\n.fa-rotate-270 {\n  transform: rotate(270deg);\n}\n\n.fa-flip-horizontal {\n  transform: scale(-1, 1);\n}\n\n.fa-flip-vertical {\n  transform: scale(1, -1);\n}\n\n.fa-flip-both,\n.fa-flip-horizontal.fa-flip-vertical {\n  transform: scale(-1, -1);\n}\n\n.fa-rotate-by {\n  transform: rotate(var(--fa-rotate-angle, 0));\n}\n\n.svg-inline--fa .fa-primary {\n  fill: var(--fa-primary-color, currentColor);\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa .fa-secondary {\n  fill: var(--fa-secondary-color, currentColor);\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-primary {\n  opacity: var(--fa-secondary-opacity, 0.4);\n}\n\n.svg-inline--fa.fa-swap-opacity .fa-secondary {\n  opacity: var(--fa-primary-opacity, 1);\n}\n\n.svg-inline--fa mask .fa-primary,\n.svg-inline--fa mask .fa-secondary {\n  fill: black;\n}\n\n.svg-inline--fa.fa-inverse {\n  fill: var(--fa-inverse, #fff);\n}\n\n.fa-stack {\n  display: inline-block;\n  height: 2em;\n  line-height: 2em;\n  position: relative;\n  vertical-align: middle;\n  width: 2.5em;\n}\n\n.fa-inverse {\n  color: var(--fa-inverse, #fff);\n}\n\n.svg-inline--fa.fa-stack-1x {\n  --fa-width: 1.25em;\n  height: 1em;\n  width: var(--fa-width);\n}\n.svg-inline--fa.fa-stack-2x {\n  --fa-width: 2.5em;\n  height: 2em;\n  width: var(--fa-width);\n}\n\n.fa-stack-1x,\n.fa-stack-2x {\n  inset: 0;\n  margin: auto;\n  position: absolute;\n  z-index: var(--fa-stack-z-index, auto);\n}";
-
 function css() {
   var dcp = DEFAULT_CSS_PREFIX;
   var drc = DEFAULT_REPLACEMENT_CLASS;
@@ -2251,7 +2269,6 @@ var injectCss = {
     };
   }
 };
-
 function domVariants(val, abstractCreator) {
   Object.defineProperty(val, 'abstract', {
     get: abstractCreator
@@ -2273,8 +2290,7 @@ function domVariants(val, abstractCreator) {
   });
   return val;
 }
-
-function asIcon (_ref) {
+function asIcon(_ref) {
   var children = _ref.children,
     main = _ref.main,
     mask = _ref.mask,
@@ -2288,9 +2304,10 @@ function asIcon (_ref) {
       x: width / height / 2,
       y: 0.5
     };
-    attributes['style'] = joinStyles(_objectSpread2(_objectSpread2({}, styles), {}, {
+    attributes['style'] = joinStyles({
+      ...styles,
       'transform-origin': "".concat(offset.x + transform.x / 16, "em ").concat(offset.y + transform.y / 16, "em")
-    }));
+    });
   }
   return [{
     tag: 'svg',
@@ -2298,8 +2315,7 @@ function asIcon (_ref) {
     children: children
   }];
 }
-
-function asSymbol (_ref) {
+function asSymbol(_ref) {
   var prefix = _ref.prefix,
     iconName = _ref.iconName,
     children = _ref.children,
@@ -2313,9 +2329,10 @@ function asSymbol (_ref) {
     },
     children: [{
       tag: 'symbol',
-      attributes: _objectSpread2(_objectSpread2({}, attributes), {}, {
+      attributes: {
+        ...attributes,
         id: id
-      }),
+      },
       children: children
     }]
   }];
@@ -2350,13 +2367,14 @@ function makeInlineSvgAbstract(params) {
   }).concat(extra.classes).join(' ');
   var content = {
     children: [],
-    attributes: _objectSpread2(_objectSpread2({}, extra.attributes), {}, {
+    attributes: {
+      ...extra.attributes,
       'data-prefix': prefix,
       'data-icon': iconName,
       'class': attrClass,
       'role': extra.attributes.role || 'img',
       'viewBox': "0 0 ".concat(width, " ").concat(height)
-    })
+    }
   };
   if (!isLabeled(extra.attributes) && !extra.attributes['aria-hidden']) {
     content.attributes['aria-hidden'] = 'true';
@@ -2364,7 +2382,8 @@ function makeInlineSvgAbstract(params) {
   if (watchable) {
     content.attributes[DATA_FA_I2SVG] = '';
   }
-  var args = _objectSpread2(_objectSpread2({}, content), {}, {
+  var args = {
+    ...content,
     prefix: prefix,
     iconName: iconName,
     main: main,
@@ -2372,8 +2391,10 @@ function makeInlineSvgAbstract(params) {
     maskId: maskId,
     transform: transform,
     symbol: symbol,
-    styles: _objectSpread2({}, extra.styles)
-  });
+    styles: {
+      ...extra.styles
+    }
+  };
   var _ref2 = mask.found && main.found ? callProvided('generateAbstractMask', args) || {
       children: [],
       attributes: {}
@@ -2399,13 +2420,16 @@ function makeLayersTextAbstract(params) {
     extra = params.extra,
     _params$watchable2 = params.watchable,
     watchable = _params$watchable2 === void 0 ? false : _params$watchable2;
-  var attributes = _objectSpread2(_objectSpread2({}, extra.attributes), {}, {
+  var attributes = {
+    ...extra.attributes,
     class: extra.classes.join(' ')
-  });
+  };
   if (watchable) {
     attributes[DATA_FA_I2SVG] = '';
   }
-  var styles = _objectSpread2({}, extra.styles);
+  var styles = {
+    ...extra.styles
+  };
   if (transformIsMeaningful(transform)) {
     styles['transform'] = transformForCss({
       transform: transform,
@@ -2430,9 +2454,10 @@ function makeLayersTextAbstract(params) {
 function makeLayersCounterAbstract(params) {
   var content = params.content,
     extra = params.extra;
-  var attributes = _objectSpread2(_objectSpread2({}, extra.attributes), {}, {
+  var attributes = {
+    ...extra.attributes,
     class: extra.classes.join(' ')
-  });
+  };
   var styleString = joinStyles(extra.styles);
   if (styleString.length > 0) {
     attributes['style'] = styleString;
@@ -2445,7 +2470,6 @@ function makeLayersCounterAbstract(params) {
   });
   return val;
 }
-
 var styles$1 = namespace.styles;
 function asFoundIcon(icon) {
   var width = icon[0];
@@ -2518,12 +2542,12 @@ function findIcon(iconName, prefix) {
       return resolve(asFoundIcon(icon));
     }
     maybeNotifyMissing(iconName, prefix);
-    resolve(_objectSpread2(_objectSpread2({}, missingIconResolutionMixin), {}, {
+    resolve({
+      ...missingIconResolutionMixin,
       icon: config.showMissingIcons && iconName ? callProvided('missingIconAbstract') || {} : {}
-    }));
+    });
   });
 }
-
 var noop$1 = function noop() {};
 var p$2 = config.measurePerformance && PERFORMANCE && PERFORMANCE.mark && PERFORMANCE.measure ? PERFORMANCE : {
   mark: noop$1,
@@ -2544,7 +2568,6 @@ var perf = {
   begin: begin,
   end: end
 };
-
 var noop$2 = function noop() {};
 function isWatched(node) {
   var i2svg = node.getAttribute ? node.getAttribute(DATA_FA_I2SVG) : null;
@@ -2731,8 +2754,7 @@ function disconnect() {
   if (!mo) return;
   mo.disconnect();
 }
-
-function styleParser (node) {
+function styleParser(node) {
   var style = node.getAttribute('style');
   var val = [];
   if (style) {
@@ -2748,8 +2770,7 @@ function styleParser (node) {
   }
   return val;
 }
-
-function classParser (node) {
+function classParser(node) {
   var existingPrefix = node.getAttribute('data-prefix');
   var existingIconName = node.getAttribute('data-icon');
   var innerText = node.innerText !== undefined ? node.innerText.trim() : '';
@@ -2772,8 +2793,7 @@ function classParser (node) {
   }
   return val;
 }
-
-function attributesParser (node) {
+function attributesParser(node) {
   var extraAttributes = toArray(node.attributes).reduce(function (acc, attr) {
     if (acc.name !== 'class' && acc.name !== 'style') {
       acc[attr.name] = attr.value;
@@ -2782,7 +2802,6 @@ function attributesParser (node) {
   }, {});
   return extraAttributes;
 }
-
 function blankMeta() {
   return {
     iconName: null,
@@ -2813,7 +2832,7 @@ function parseMeta(node) {
   var extraAttributes = attributesParser(node);
   var pluginMeta = chainHooks('parseNodeAttributes', {}, node);
   var extraStyles = parser.styleParser ? styleParser(node) : [];
-  return _objectSpread2({
+  return {
     iconName: iconName,
     prefix: prefix,
     transform: meaninglessTransform,
@@ -2828,10 +2847,10 @@ function parseMeta(node) {
       classes: extraClasses,
       styles: extraStyles,
       attributes: extraAttributes
-    }
-  }, pluginMeta);
+    },
+    ...pluginMeta
+  };
 }
-
 var styles$2 = namespace.styles;
 function generateMutation(node) {
   var nodeMeta = config.autoReplaceSvg === 'nest' ? parseMeta(node, {
@@ -2926,9 +2945,10 @@ function resolveIcons(next) {
     if (mask) {
       mask = (mask || {}).icon ? mask : findIconDefinition(mask || {});
     }
-    return next(iconDefinition, _objectSpread2(_objectSpread2({}, params), {}, {
+    return next(iconDefinition, {
+      ...params,
       mask: mask
-    }));
+    });
   };
 }
 var render = function render(iconDefinition) {
@@ -2951,9 +2971,10 @@ var render = function render(iconDefinition) {
   var prefix = iconDefinition.prefix,
     iconName = iconDefinition.iconName,
     icon = iconDefinition.icon;
-  return domVariants(_objectSpread2({
-    type: 'icon'
-  }, iconDefinition), function () {
+  return domVariants({
+    type: 'icon',
+    ...iconDefinition
+  }, function () {
     callHooks('beforeDOMElementCreation', {
       iconDefinition: iconDefinition,
       params: params
@@ -2970,7 +2991,10 @@ var render = function render(iconDefinition) {
       },
       prefix: prefix,
       iconName: iconName,
-      transform: _objectSpread2(_objectSpread2({}, meaninglessTransform), transform),
+      transform: {
+        ...meaninglessTransform,
+        ...transform
+      },
       symbol: symbol,
       maskId: maskId,
       extra: {
@@ -3065,7 +3089,6 @@ var replaceElements = {
     };
   }
 };
-
 var layers = {
   mixout: function mixout() {
     return {
@@ -3098,7 +3121,6 @@ var layers = {
     };
   }
 };
-
 var layersCounter = {
   mixout: function mixout() {
     return {
@@ -3134,7 +3156,6 @@ var layersCounter = {
     };
   }
 };
-
 var layersText = {
   mixout: function mixout() {
     return {
@@ -3158,7 +3179,10 @@ var layersText = {
           });
           return makeLayersTextAbstract({
             content: content,
-            transform: _objectSpread2(_objectSpread2({}, meaninglessTransform), transform),
+            transform: {
+              ...meaninglessTransform,
+              ...transform
+            },
             extra: {
               attributes: attributes,
               styles: styles,
@@ -3192,15 +3216,17 @@ var layersText = {
     };
   }
 };
-
 var CLEAN_CONTENT_PATTERN = new RegExp("\"", 'ug');
 var SECONDARY_UNICODE_RANGE = [1105920, 1112319];
-var _FONT_FAMILY_WEIGHT_TO_PREFIX = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, {
+var _FONT_FAMILY_WEIGHT_TO_PREFIX = {
   FontAwesome: {
     normal: 'fas',
     400: 'fas'
-  }
-}), zl), wa), ct);
+  },
+  ...zl,
+  ...wa,
+  ...ct
+};
 var FONT_FAMILY_WEIGHT_TO_PREFIX = Object.keys(_FONT_FAMILY_WEIGHT_TO_PREFIX).reduce(function (acc, key) {
   acc[key.toLowerCase()] = _FONT_FAMILY_WEIGHT_TO_PREFIX[key];
   return acc;
@@ -3286,7 +3312,8 @@ function replaceForPosition(node, position) {
         var extra = meta.extra;
         extra.attributes[DATA_FA_PSEUDO_ELEMENT] = position;
         findIcon(iconName, prefix).then(function (main) {
-          var abstract = makeInlineSvgAbstract(_objectSpread2(_objectSpread2({}, meta), {}, {
+          var abstract = makeInlineSvgAbstract({
+            ...meta,
             icons: {
               main: main,
               mask: emptyCanonicalIcon()
@@ -3295,7 +3322,7 @@ function replaceForPosition(node, position) {
             iconName: iconIdentifier,
             extra: extra,
             watchable: true
-          }));
+          });
           var element = DOCUMENT.createElementNS('http://www.w3.org/2000/svg', 'svg');
           if (position === '::before') {
             node.insertBefore(element, node.firstChild);
@@ -3455,7 +3482,6 @@ var pseudoElements = {
     };
   }
 };
-
 var _unwatched = false;
 var mutationObserver = {
   mixout: function mixout() {
@@ -3489,7 +3515,6 @@ var mutationObserver = {
     };
   }
 };
-
 var parseTransformString = function parseTransformString(transformString) {
   var transform = {
     size: 16,
@@ -3587,21 +3612,27 @@ var powerTransforms = {
       };
       return {
         tag: 'g',
-        attributes: _objectSpread2({}, operations.outer),
+        attributes: {
+          ...operations.outer
+        },
         children: [{
           tag: 'g',
-          attributes: _objectSpread2({}, operations.inner),
+          attributes: {
+            ...operations.inner
+          },
           children: [{
             tag: main.icon.tag,
             children: main.icon.children,
-            attributes: _objectSpread2(_objectSpread2({}, main.icon.attributes), operations.path)
+            attributes: {
+              ...main.icon.attributes,
+              ...operations.path
+            }
           }]
         }]
       };
     };
   }
 };
-
 var ALL_SPACE = {
   x: 0,
   y: 0,
@@ -3658,35 +3689,45 @@ var masks = {
       });
       var maskRect = {
         tag: 'rect',
-        attributes: _objectSpread2(_objectSpread2({}, ALL_SPACE), {}, {
+        attributes: {
+          ...ALL_SPACE,
           fill: 'white'
-        })
+        }
       };
       var maskInnerGroupChildrenMixin = mainPath.children ? {
         children: mainPath.children.map(fillBlack)
       } : {};
       var maskInnerGroup = {
         tag: 'g',
-        attributes: _objectSpread2({}, trans.inner),
-        children: [fillBlack(_objectSpread2({
+        attributes: {
+          ...trans.inner
+        },
+        children: [fillBlack({
           tag: mainPath.tag,
-          attributes: _objectSpread2(_objectSpread2({}, mainPath.attributes), trans.path)
-        }, maskInnerGroupChildrenMixin))]
+          attributes: {
+            ...mainPath.attributes,
+            ...trans.path
+          },
+          ...maskInnerGroupChildrenMixin
+        })]
       };
       var maskOuterGroup = {
         tag: 'g',
-        attributes: _objectSpread2({}, trans.outer),
+        attributes: {
+          ...trans.outer
+        },
         children: [maskInnerGroup]
       };
       var maskId = "mask-".concat(explicitMaskId || nextUniqueId());
       var clipId = "clip-".concat(explicitMaskId || nextUniqueId());
       var maskTag = {
         tag: 'mask',
-        attributes: _objectSpread2(_objectSpread2({}, ALL_SPACE), {}, {
+        attributes: {
+          ...ALL_SPACE,
           id: maskId,
           maskUnits: 'userSpaceOnUse',
           maskContentUnits: 'userSpaceOnUse'
-        }),
+        },
         children: [maskRect, maskOuterGroup]
       };
       var defs = {
@@ -3701,11 +3742,12 @@ var masks = {
       };
       children.push(defs, {
         tag: 'rect',
-        attributes: _objectSpread2({
+        attributes: {
           'fill': 'currentColor',
           'clip-path': "url(#".concat(clipId, ")"),
-          'mask': "url(#".concat(maskId, ")")
-        }, ALL_SPACE)
+          'mask': "url(#".concat(maskId, ")"),
+          ...ALL_SPACE
+        }
       });
       return {
         children: children,
@@ -3714,7 +3756,6 @@ var masks = {
     };
   }
 };
-
 var missingIconIndicator = {
   provides: function provides(providers) {
     var reduceMotion = false;
@@ -3735,63 +3776,72 @@ var missingIconIndicator = {
       // Ring
       gChildren.push({
         tag: 'path',
-        attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {
+        attributes: {
+          ...FILL,
           d: 'M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z'
-        })
+        }
       });
-      var OPACITY_ANIMATE = _objectSpread2(_objectSpread2({}, ANIMATION_BASE), {}, {
+      var OPACITY_ANIMATE = {
+        ...ANIMATION_BASE,
         attributeName: 'opacity'
-      });
+      };
       var dot = {
         tag: 'circle',
-        attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {
+        attributes: {
+          ...FILL,
           cx: '256',
           cy: '364',
           r: '28'
-        }),
+        },
         children: []
       };
       if (!reduceMotion) {
         dot.children.push({
           tag: 'animate',
-          attributes: _objectSpread2(_objectSpread2({}, ANIMATION_BASE), {}, {
+          attributes: {
+            ...ANIMATION_BASE,
             attributeName: 'r',
             values: '28;14;28;28;14;28;'
-          })
+          }
         }, {
           tag: 'animate',
-          attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
+          attributes: {
+            ...OPACITY_ANIMATE,
             values: '1;0;1;1;0;1;'
-          })
+          }
         });
       }
       gChildren.push(dot);
       gChildren.push({
         tag: 'path',
-        attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {
+        attributes: {
+          ...FILL,
           opacity: '1',
           d: 'M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z'
-        }),
+        },
         children: reduceMotion ? [] : [{
           tag: 'animate',
-          attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
+          attributes: {
+            ...OPACITY_ANIMATE,
             values: '1;0;0;0;0;1;'
-          })
+          }
         }]
       });
       if (!reduceMotion) {
         // Exclamation
         gChildren.push({
           tag: 'path',
-          attributes: _objectSpread2(_objectSpread2({}, FILL), {}, {
+          attributes: {
+            ...FILL,
             opacity: '0',
             d: 'M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z'
-          }),
+          },
           children: [{
             tag: 'animate',
-            attributes: _objectSpread2(_objectSpread2({}, OPACITY_ANIMATE), {}, {
+            attributes: {
+              ...OPACITY_ANIMATE,
               values: '0;0;1;1;0;0;'
-            })
+            }
           }]
         });
       }
@@ -3805,7 +3855,6 @@ var missingIconIndicator = {
     };
   }
 };
-
 var svgSymbols = {
   hooks: function hooks() {
     return {
@@ -3818,11 +3867,9 @@ var svgSymbols = {
     };
   }
 };
-
 function register(plugins) {
   return registerPlugins(plugins, {
     mixoutsTo: api
   });
 }
-
 export { register, injectCss as InjectCSS, replaceElements as ReplaceElements, layers as Layers, layersCounter as LayersCounter, layersText as LayersText, pseudoElements as PseudoElements, mutationObserver as MutationObserver, powerTransforms as PowerTransforms, masks as Masks, missingIconIndicator as MissingIconIndicator, svgSymbols as SvgSymbols };
