@@ -18,7 +18,7 @@
     "url": "https://github.com/FortAwesome/Font-Awesome"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=11"
   },
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "7.3.1"
